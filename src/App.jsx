@@ -1,4 +1,5 @@
 import React from 'react';
+import Chat from './Chat';
 
 export default function App() {
   console.log("App is rendering - Struggling to Become a Doctor");
@@ -9,17 +10,7 @@ export default function App() {
         <p className="mt-1 text-lg">Empowering your journey towards a medical career.</p>
       </header>
       <main className="h-full flex-grow p-4">
-        <p>
-          Welcome to your doctor journey. Explore challenges, embrace resilience, and discover inspiration to pursue your dreams.
-        </p>
-        <button
-          className="cursor-pointer px-4 py-2 bg-blue-500 text-white rounded mt-4"
-          onClick={() => {
-            console.log('Get Started button clicked');
-          }}
-        >
-          Get Started
-        </button>
+        <Chat />
       </main>
       <footer className="p-4 bg-gray-200 text-center">
         <a
